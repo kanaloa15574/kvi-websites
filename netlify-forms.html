@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Netlify Forms (KVI Websites)</title>
+  <meta name="robots" content="noindex,nofollow" />
+</head>
+<body>
+  <!--
+    This page exists ONLY so Netlify can detect your forms at deploy time.
+    You do not need to link to it from your website.
+  -->
+
+  <!-- Contact form (matches the form on index.html) -->
+  <form name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
+        hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <p hidden>
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </p>
+
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="phone" />
+    <textarea name="message"></textarea>
+
+    <div data-netlify-recaptcha="true"></div>
+  </form>
+
+  <!-- Quote form (matches the form on quote.html) -->
+  <form name="quote"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        data-netlify-recaptcha="true"
+        hidden>
+    <input type="hidden" name="form-name" value="quote" />
+    <p hidden>
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </p>
+
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="text" name="phone" />
+    <input type="text" name="business" />
+    <select name="package">
+      <option value="starter">Starter</option>
+      <option value="growth">Growth</option>
+    </select>
+    <textarea name="details"></textarea>
+
+    <div data-netlify-recaptcha="true"></div>
+  </form>
+</body>
+</html>
