@@ -279,7 +279,7 @@
             <!-- Netlify-ready form:
                  - Works automatically on Netlify.
                  - If you host elsewhere, connect to Formspree or add a backend. See README.md -->
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form" data-form="contact" data-netlify-recaptcha="true">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form" data-form="contact">
               <input type="hidden" name="form-name" value="contact" />
               <p class="hidden">
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -304,9 +304,6 @@
                 <label for="c-message">Message</label>
                 <textarea id="c-message" name="message" rows="5" required></textarea>
               </div>
-              <div data-netlify-recaptcha="true"></div>
-
-
 
               <button class="btn btn-primary" type="submit">Send message</button>
               <p class="form-note muted">Prefer pricing? Use <a href="quote.html">Request a Quote</a>.</p>

@@ -92,7 +92,7 @@
             <p class="muted" style="margin:0 0 16px;">We’ll respond as soon as possible. Or call <a href="tel:+17023708827">1 (702) 370-8827</a>.</p>
 
             <!-- Netlify-ready form -->
-            <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form" data-form="quote" data-netlify-recaptcha="true">
+            <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html" class="form" data-form="quote">
               <input type="hidden" name="form-name" value="quote" />
               <p class="hidden">
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -161,9 +161,6 @@
               <input type="hidden" name="est_pages" id="est_pages" />
               <input type="hidden" name="est_addons" id="est_addons" />
               <input type="hidden" name="est_range" id="est_range" />
-              <div data-netlify-recaptcha="true"></div>
-
-
 
               <button class="btn btn-primary" type="submit">Submit request</button>
               <p class="form-note muted">By submitting, you agree KVI Websites can contact you about your request.</p>
